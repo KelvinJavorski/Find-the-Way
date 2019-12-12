@@ -1,0 +1,618 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4Af-HX-MKQ">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Input Players Name View Controller-->
+        <scene sceneID="qMh-6Q-6ut">
+            <objects>
+                <viewController storyboardIdentifier="Input Player Name" useStoryboardIdentifierAsRestorationIdentifier="YES" id="EIY-x6-uu1" customClass="InputPlayersNameViewController" customModule="Jogos_" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="meh-hk-bsI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BnD-cG-rXM" userLabel="Top View">
+                                <rect key="frame" x="0.0" y="88" width="414" height="100.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type the name of 4 - 8 players" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tp4-Ie-hLZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="100.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Tp4-Ie-hLZ" firstAttribute="top" secondItem="BnD-cG-rXM" secondAttribute="top" id="3hL-j9-Phc"/>
+                                    <constraint firstAttribute="trailing" secondItem="Tp4-Ie-hLZ" secondAttribute="trailing" id="5f4-7b-39e"/>
+                                    <constraint firstAttribute="bottom" secondItem="Tp4-Ie-hLZ" secondAttribute="bottom" id="BHF-aE-4on"/>
+                                    <constraint firstItem="Tp4-Ie-hLZ" firstAttribute="leading" secondItem="BnD-cG-rXM" secondAttribute="leading" id="tBq-LV-T4z"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="5KD-Y8-KDX">
+                                <rect key="frame" x="52" y="198.5" width="310.5" height="460"/>
+                                <subviews>
+                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gp6-9c-ebQ" userLabel="Player 1" customClass="RoundedCornerView" customModule="Jogos_" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="310.5" height="53"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Kle-w3-Z0M">
+                                                <rect key="frame" x="5" y="0.0" width="300.5" height="53"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Type the name of the player" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hjf-4f-ETJ" userLabel="Player 1">
+                                                        <rect key="frame" x="0.0" y="18" width="242" height="17"/>
+                                                        <color key="backgroundColor" red="0.20036309960000001" green="0.38879162070000001" blue="0.38973709940000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yjy-SH-kFv" userLabel="Remove Player" customClass="RoundedCornerView" customModule="Jogos_" customModuleProvider="target">
+                                                        <rect key="frame" x="247" y="0.0" width="53.5" height="53"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O8R-Q1-b0j">
+                                                                <rect key="frame" x="0.0" y="0.0" width="53.5" height="53"/>
+                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <state key="normal" image="minusbutton">
+                                                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30" weight="semibold"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="removePlayer:" destination="EIY-x6-uu1" eventType="touchUpInside" id="8O6-m3-aPl"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="yjy-SH-kFv" secondAttribute="height" multiplier="1:1" id="5Gd-Jl-sI8"/>
+                                                            <constraint firstItem="O8R-Q1-b0j" firstAttribute="top" secondItem="yjy-SH-kFv" secondAttribute="top" id="Mbt-W8-IWb"/>
+                                                            <constraint firstAttribute="bottom" secondItem="O8R-Q1-b0j" secondAttribute="bottom" id="YdV-xe-Dn7"/>
+                                                            <constraint firstItem="O8R-Q1-b0j" firstAttribute="leading" secondItem="yjy-SH-kFv" secondAttribute="leading" id="gq0-ty-KNU"/>
+                                                            <constraint firstAttribute="trailing" secondItem="O8R-Q1-b0j" secondAttribute="trailing" id="qCp-3J-WxF"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="5"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.20036309960000001" green="0.38879162070000001" blue="0.38973709940000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="Kle-w3-Z0M" secondAttribute="trailing" constant="5" id="DWL-OC-Woi"/>
+                                            <constraint firstItem="Kle-w3-Z0M" firstAttribute="top" secondItem="Gp6-9c-ebQ" secondAttribute="top" id="JXe-Nl-Gtn"/>
+                                            <constraint firstAttribute="bottom" secondItem="Kle-w3-Z0M" secondAttribute="bottom" id="bUO-Tu-QeS"/>
+                                            <constraint firstItem="Kle-w3-Z0M" firstAttribute="leading" secondItem="Gp6-9c-ebQ" secondAttribute="leading" constant="5" id="tDn-T6-vYG"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="guF-9e-xJ7" userLabel="Player 2" customClass="RoundedCornerView" customModule="Jogos_" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="58" width="310.5" height="53.5"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="RpP-yR-WPR">
+                                                <rect key="frame" x="5" y="0.0" width="300.5" height="53.5"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Type the name of the player" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Nag-tT-iqy" userLabel="Player 2">
+                                                        <rect key="frame" x="0.0" y="18.5" width="242" height="17"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o3I-gt-dRz" userLabel="Remove Player" customClass="RoundedCornerView" customModule="Jogos_" customModuleProvider="target">
+                                                        <rect key="frame" x="247" y="0.0" width="53.5" height="53.5"/>
+                                                        <subviews>
+                                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="baw-uW-ZbS">
+                                                                <rect key="frame" x="0.0" y="0.0" width="53.5" height="53.5"/>
+                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <state key="normal" image="minusbutton">
+                                                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30" weight="semibold"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="removePlayer:" destination="EIY-x6-uu1" eventType="touchUpInside" id="Dws-iR-Iy7"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="bottom" secondItem="baw-uW-ZbS" secondAttribute="bottom" id="JHY-Lj-VD6"/>
+                                                            <constraint firstItem="baw-uW-ZbS" firstAttribute="top" secondItem="o3I-gt-dRz" secondAttribute="top" id="WkD-ec-ugO"/>
+                                                            <constraint firstAttribute="trailing" secondItem="baw-uW-ZbS" secondAttribute="trailing" id="ZOr-MI-9ox"/>
+                                                            <constraint firstAttribute="width" secondItem="o3I-gt-dRz" secondAttribute="height" multiplier="1:1" id="gXS-go-xJJ"/>
+                                                            <constraint firstItem="baw-uW-ZbS" firstAttribute="leading" secondItem="o3I-gt-dRz" secondAttribute="leading" id="ygd-dP-GZb"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="5"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.20036309960000001" green="0.38879162070000001" blue="0.38973709940000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="RpP-yR-WPR" firstAttribute="top" secondItem="guF-9e-xJ7" secondAttribute="top" id="fpr-vn-Nku"/>
+                                            <constraint firstAttribute="bottom" secondItem="RpP-yR-WPR" secondAttribute="bottom" id="iJu-4S-OU7"/>
+                                            <constraint firstItem="RpP-yR-WPR" firstAttribute="leading" secondItem="guF-9e-xJ7" secondAttribute="leading" constant="5" id="k56-F4-JjD"/>
+                                            <constraint firstAttribute="trailing" secondItem="RpP-yR-WPR" secondAttribute="trailing" constant="5" id="rUM-ie-9Ih"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aBI-Z3-9B4" userLabel="Player 3" customClass="RoundedCornerView" customModule="Jogos_" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="116.5" width="310.5" height="53"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Qll-8I-1Fj">
+                                                <rect key="frame" x="5" y="0.0" width="300.5" height="53"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Type the name of the player" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AF2-LK-n9D" userLabel="Player 3">
+                                                        <rect key="frame" x="0.0" y="18" width="242" height="17"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Enz-K8-o7o" userLabel="Remove Player" customClass="RoundedCornerView" customModule="Jogos_" customModuleProvider="target">
+                                                        <rect key="frame" x="247" y="0.0" width="53.5" height="53"/>
+                                                        <subviews>
+                                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qtP-Rf-dqj">
+                                                                <rect key="frame" x="0.0" y="0.0" width="53.5" height="53"/>
+                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <state key="normal" image="minusbutton">
+                                                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30" weight="semibold"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="removePlayer:" destination="EIY-x6-uu1" eventType="touchUpInside" id="adD-dC-tZR"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="bottom" secondItem="qtP-Rf-dqj" secondAttribute="bottom" id="7w0-03-yCq"/>
+                                                            <constraint firstAttribute="trailing" secondItem="qtP-Rf-dqj" secondAttribute="trailing" id="DEO-OS-th9"/>
+                                                            <constraint firstItem="qtP-Rf-dqj" firstAttribute="leading" secondItem="Enz-K8-o7o" secondAttribute="leading" id="HJK-fB-lO4"/>
+                                                            <constraint firstItem="qtP-Rf-dqj" firstAttribute="top" secondItem="Enz-K8-o7o" secondAttribute="top" id="tAz-dd-Y3x"/>
+                                                            <constraint firstAttribute="width" secondItem="Enz-K8-o7o" secondAttribute="height" multiplier="1:1" id="xnb-kT-Imd"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="5"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.20036309960000001" green="0.38879162070000001" blue="0.38973709940000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="Qll-8I-1Fj" secondAttribute="bottom" id="3Ra-K5-Mhh"/>
+                                            <constraint firstItem="Qll-8I-1Fj" firstAttribute="leading" secondItem="aBI-Z3-9B4" secondAttribute="leading" constant="5" id="CDe-sf-urP"/>
+                                            <constraint firstAttribute="trailing" secondItem="Qll-8I-1Fj" secondAttribute="trailing" constant="5" id="LmA-wb-uSX"/>
+                                            <constraint firstItem="Qll-8I-1Fj" firstAttribute="top" secondItem="aBI-Z3-9B4" secondAttribute="top" id="qYe-EW-Bvb"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B6U-k9-Jv2" userLabel="Player 4" customClass="RoundedCornerView" customModule="Jogos_" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="174.5" width="310.5" height="53"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="0C0-0l-SPX">
+                                                <rect key="frame" x="5" y="0.0" width="300.5" height="53"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Type the name of the player" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dL3-7E-5Ig" userLabel="Player 4">
+                                                        <rect key="frame" x="0.0" y="18" width="242" height="17"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EyN-ql-6GA" userLabel="Remove Player" customClass="RoundedCornerView" customModule="Jogos_" customModuleProvider="target">
+                                                        <rect key="frame" x="247" y="0.0" width="53.5" height="53"/>
+                                                        <subviews>
+                                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UNT-R1-BU3">
+                                                                <rect key="frame" x="0.0" y="0.0" width="53.5" height="53"/>
+                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <state key="normal" image="minusbutton">
+                                                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30" weight="semibold"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="removePlayer:" destination="EIY-x6-uu1" eventType="touchUpInside" id="rUZ-mM-B6w"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="EyN-ql-6GA" secondAttribute="height" multiplier="1:1" id="2cj-5F-TIZ"/>
+                                                            <constraint firstItem="UNT-R1-BU3" firstAttribute="top" secondItem="EyN-ql-6GA" secondAttribute="top" id="5w3-bC-Fke"/>
+                                                            <constraint firstAttribute="bottom" secondItem="UNT-R1-BU3" secondAttribute="bottom" id="UVc-0k-UtU"/>
+                                                            <constraint firstItem="UNT-R1-BU3" firstAttribute="leading" secondItem="EyN-ql-6GA" secondAttribute="leading" id="hnR-Mv-jmP"/>
+                                                            <constraint firstAttribute="trailing" secondItem="UNT-R1-BU3" secondAttribute="trailing" id="mFl-iW-4xV"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="5"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.20036309960000001" green="0.38879162070000001" blue="0.38973709940000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="0C0-0l-SPX" firstAttribute="leading" secondItem="B6U-k9-Jv2" secondAttribute="leading" constant="5" id="1xb-W9-xp5"/>
+                                            <constraint firstAttribute="trailing" secondItem="0C0-0l-SPX" secondAttribute="trailing" constant="5" id="Sz2-d2-06r"/>
+                                            <constraint firstItem="0C0-0l-SPX" firstAttribute="top" secondItem="B6U-k9-Jv2" secondAttribute="top" id="Yp2-Or-c0R"/>
+                                            <constraint firstAttribute="bottom" secondItem="0C0-0l-SPX" secondAttribute="bottom" id="xXz-zD-uhh"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WgX-Js-ev4" userLabel="Player 5" customClass="RoundedCornerView" customModule="Jogos_" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="232.5" width="310.5" height="53"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="NlO-nc-5ae">
+                                                <rect key="frame" x="5" y="0.0" width="300.5" height="53"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Type the name of the player" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EMU-N0-LGu" userLabel="Player 5">
+                                                        <rect key="frame" x="0.0" y="18" width="242" height="17"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Ii-Dw-vUK" userLabel="Remove Player" customClass="RoundedCornerView" customModule="Jogos_" customModuleProvider="target">
+                                                        <rect key="frame" x="247" y="0.0" width="53.5" height="53"/>
+                                                        <subviews>
+                                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y7s-Vl-jEG">
+                                                                <rect key="frame" x="0.0" y="0.0" width="53.5" height="53"/>
+                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <state key="normal" image="minusbutton">
+                                                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30" weight="semibold"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="removePlayer:" destination="EIY-x6-uu1" eventType="touchUpInside" id="gEA-qR-3u2"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="1Ii-Dw-vUK" secondAttribute="height" multiplier="1:1" id="9ls-mn-CnL"/>
+                                                            <constraint firstItem="y7s-Vl-jEG" firstAttribute="top" secondItem="1Ii-Dw-vUK" secondAttribute="top" id="DWJ-bw-Fa4"/>
+                                                            <constraint firstItem="y7s-Vl-jEG" firstAttribute="leading" secondItem="1Ii-Dw-vUK" secondAttribute="leading" id="aHO-eT-x7G"/>
+                                                            <constraint firstAttribute="bottom" secondItem="y7s-Vl-jEG" secondAttribute="bottom" id="i2n-Kt-qtX"/>
+                                                            <constraint firstAttribute="trailing" secondItem="y7s-Vl-jEG" secondAttribute="trailing" id="nFH-TV-g3t"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="5"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.20036309960000001" green="0.38879162070000001" blue="0.38973709940000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="NlO-nc-5ae" secondAttribute="bottom" id="5dU-i0-9SF"/>
+                                            <constraint firstItem="NlO-nc-5ae" firstAttribute="leading" secondItem="WgX-Js-ev4" secondAttribute="leading" constant="5" id="EDB-iu-gdP"/>
+                                            <constraint firstAttribute="trailing" secondItem="NlO-nc-5ae" secondAttribute="trailing" constant="5" id="bHH-rN-fCD"/>
+                                            <constraint firstItem="NlO-nc-5ae" firstAttribute="top" secondItem="WgX-Js-ev4" secondAttribute="top" id="uAY-TP-Dbd"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T4Z-yd-Bgx" userLabel="Player 6" customClass="RoundedCornerView" customModule="Jogos_" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="290.5" width="310.5" height="53.5"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="T2E-Rg-hO6">
+                                                <rect key="frame" x="5" y="0.0" width="300.5" height="53.5"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Type the name of the player" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qpA-NX-Pl6" userLabel="Player 6">
+                                                        <rect key="frame" x="0.0" y="18" width="242" height="17"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="70R-IJ-UgA" userLabel="Remove Player" customClass="RoundedCornerView" customModule="Jogos_" customModuleProvider="target">
+                                                        <rect key="frame" x="247" y="0.0" width="53.5" height="53.5"/>
+                                                        <subviews>
+                                                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sJ4-O7-W4k">
+                                                                <rect key="frame" x="0.0" y="0.0" width="53.5" height="53.5"/>
+                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <state key="normal" image="minusbutton">
+                                                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30" weight="semibold"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="removePlayer:" destination="EIY-x6-uu1" eventType="touchUpInside" id="e8J-Yr-99K"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="bottom" secondItem="sJ4-O7-W4k" secondAttribute="bottom" id="06A-QD-6VQ"/>
+                                                            <constraint firstAttribute="width" secondItem="70R-IJ-UgA" secondAttribute="height" multiplier="1:1" id="7Bq-0U-BzM"/>
+                                                            <constraint firstItem="sJ4-O7-W4k" firstAttribute="top" secondItem="70R-IJ-UgA" secondAttribute="top" id="HBq-nt-jcG"/>
+                                                            <constraint firstAttribute="trailing" secondItem="sJ4-O7-W4k" secondAttribute="trailing" id="ZfO-Vo-xGg"/>
+                                                            <constraint firstItem="sJ4-O7-W4k" firstAttribute="leading" secondItem="70R-IJ-UgA" secondAttribute="leading" id="afB-9n-faM"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="5"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.20036309960000001" green="0.38879162070000001" blue="0.38973709940000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="T2E-Rg-hO6" firstAttribute="top" secondItem="T4Z-yd-Bgx" secondAttribute="top" id="2JG-vX-epo"/>
+                                            <constraint firstAttribute="trailing" secondItem="T2E-Rg-hO6" secondAttribute="trailing" constant="5" id="VTx-Kw-lDa"/>
+                                            <constraint firstAttribute="bottom" secondItem="T2E-Rg-hO6" secondAttribute="bottom" id="viu-gt-NF0"/>
+                                            <constraint firstItem="T2E-Rg-hO6" firstAttribute="leading" secondItem="T4Z-yd-Bgx" secondAttribute="leading" constant="5" id="xXP-O4-M26"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5oT-j5-M3e" userLabel="Player 7" customClass="RoundedCornerView" customModule="Jogos_" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="349" width="310.5" height="53"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="i6Z-ZH-XPU">
+                                                <rect key="frame" x="5" y="0.0" width="300.5" height="53"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Type the name of the player" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jdX-3q-Iy4" userLabel="Player 7">
+                                                        <rect key="frame" x="0.0" y="18" width="242" height="17"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jVv-4u-r0R" userLabel="Remove Player" customClass="RoundedCornerView" customModule="Jogos_" customModuleProvider="target">
+                                                        <rect key="frame" x="247" y="0.0" width="53.5" height="53"/>
+                                                        <subviews>
+                                                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eKa-El-1ec">
+                                                                <rect key="frame" x="0.0" y="0.0" width="53.5" height="53"/>
+                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <state key="normal" image="minusbutton">
+                                                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30" weight="semibold"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="removePlayer:" destination="EIY-x6-uu1" eventType="touchUpInside" id="W1t-MN-YqZ"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstItem="eKa-El-1ec" firstAttribute="top" secondItem="jVv-4u-r0R" secondAttribute="top" id="VI3-ZH-C2o"/>
+                                                            <constraint firstAttribute="width" secondItem="jVv-4u-r0R" secondAttribute="height" multiplier="1:1" id="fKy-k4-C0e"/>
+                                                            <constraint firstAttribute="trailing" secondItem="eKa-El-1ec" secondAttribute="trailing" id="ha4-Mj-zVw"/>
+                                                            <constraint firstItem="eKa-El-1ec" firstAttribute="leading" secondItem="jVv-4u-r0R" secondAttribute="leading" id="lBz-ty-ReF"/>
+                                                            <constraint firstAttribute="bottom" secondItem="eKa-El-1ec" secondAttribute="bottom" id="o3v-Js-D62"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="5"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.20036309960000001" green="0.38879162070000001" blue="0.38973709940000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="i6Z-ZH-XPU" secondAttribute="trailing" constant="5" id="0dV-FX-Yaq"/>
+                                            <constraint firstItem="i6Z-ZH-XPU" firstAttribute="leading" secondItem="5oT-j5-M3e" secondAttribute="leading" constant="5" id="4ez-6d-iFp"/>
+                                            <constraint firstAttribute="bottom" secondItem="i6Z-ZH-XPU" secondAttribute="bottom" id="kjK-5m-nQ7"/>
+                                            <constraint firstItem="i6Z-ZH-XPU" firstAttribute="top" secondItem="5oT-j5-M3e" secondAttribute="top" id="uHI-J5-NK6"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EtG-TR-3CV" userLabel="Player 8" customClass="RoundedCornerView" customModule="Jogos_" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="407" width="310.5" height="53"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="mF7-Qp-CmT">
+                                                <rect key="frame" x="5" y="0.0" width="300.5" height="53"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Type the name of the player" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3ok-rQ-j0c" userLabel="Player 8">
+                                                        <rect key="frame" x="0.0" y="0.0" width="255.5" height="53"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CFA-NW-BLg" userLabel="Remove Player" customClass="RoundedCornerView" customModule="Jogos_" customModuleProvider="target">
+                                                        <rect key="frame" x="260.5" y="6.5" width="40" height="40"/>
+                                                        <subviews>
+                                                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FS5-Ze-XGR">
+                                                                <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <state key="normal" image="minusbutton">
+                                                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30" weight="semibold"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="removePlayer:" destination="EIY-x6-uu1" eventType="touchUpInside" id="ah7-vI-Qjc"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="CFA-NW-BLg" secondAttribute="height" multiplier="1:1" id="XI5-az-hDQ"/>
+                                                            <constraint firstItem="FS5-Ze-XGR" firstAttribute="leading" secondItem="CFA-NW-BLg" secondAttribute="leading" id="chG-cd-cEF"/>
+                                                            <constraint firstAttribute="bottom" secondItem="FS5-Ze-XGR" secondAttribute="bottom" id="ft8-RD-Hhh"/>
+                                                            <constraint firstItem="FS5-Ze-XGR" firstAttribute="top" secondItem="CFA-NW-BLg" secondAttribute="top" id="gKB-mL-NWo"/>
+                                                            <constraint firstAttribute="trailing" secondItem="FS5-Ze-XGR" secondAttribute="trailing" id="iye-mB-6fu"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="5"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="CFA-NW-BLg" firstAttribute="height" secondItem="3ok-rQ-j0c" secondAttribute="height" multiplier="0.75" id="9J2-GK-mTX"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.20036309960000001" green="0.38879162070000001" blue="0.38973709940000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="mF7-Qp-CmT" firstAttribute="top" secondItem="EtG-TR-3CV" secondAttribute="top" id="LaU-7U-Rx7"/>
+                                            <constraint firstAttribute="trailing" secondItem="mF7-Qp-CmT" secondAttribute="trailing" constant="5" id="OC5-Rg-HsX"/>
+                                            <constraint firstAttribute="bottom" secondItem="mF7-Qp-CmT" secondAttribute="bottom" id="VCB-gR-Ehw"/>
+                                            <constraint firstItem="mF7-Qp-CmT" firstAttribute="leading" secondItem="EtG-TR-3CV" secondAttribute="leading" constant="5" id="d0R-TC-x7Q"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3YX-eR-WHW" userLabel="Bottom View">
+                                <rect key="frame" x="0.0" y="668.5" width="414" height="193.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M2b-93-jgO">
+                                        <rect key="frame" x="42" y="61" width="331" height="72"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                        <state key="normal" title="Start Game" backgroundImage="chooseCoordenate">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="Gv2-LU-uUH" kind="presentation" identifier="Pass Device Segue" id="jmm-Aw-UD7"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QnX-1h-zUV">
+                                        <rect key="frame" x="156" y="141" width="103" height="36"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="How to Play">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="3YX-eR-WHW" firstAttribute="top" relation="greaterThanOrEqual" secondItem="5KD-Y8-KDX" secondAttribute="bottom" constant="10" id="5CU-hT-cgb"/>
+                            <constraint firstItem="3YX-eR-WHW" firstAttribute="height" secondItem="dej-Ta-Z3Q" secondAttribute="height" multiplier="0.25" id="Cw4-NZ-gCO"/>
+                            <constraint firstItem="5KD-Y8-KDX" firstAttribute="centerX" secondItem="dej-Ta-Z3Q" secondAttribute="centerX" id="Dqs-ks-NmO"/>
+                            <constraint firstItem="BnD-cG-rXM" firstAttribute="top" secondItem="dej-Ta-Z3Q" secondAttribute="top" id="E8k-ig-Ol6"/>
+                            <constraint firstItem="5KD-Y8-KDX" firstAttribute="width" secondItem="dej-Ta-Z3Q" secondAttribute="width" multiplier="0.75" id="NRz-85-RQh"/>
+                            <constraint firstItem="dej-Ta-Z3Q" firstAttribute="trailing" secondItem="BnD-cG-rXM" secondAttribute="trailing" id="c3y-S0-zTd"/>
+                            <constraint firstItem="BnD-cG-rXM" firstAttribute="leading" secondItem="dej-Ta-Z3Q" secondAttribute="leading" id="c9R-cJ-FET"/>
+                            <constraint firstItem="dej-Ta-Z3Q" firstAttribute="trailing" secondItem="3YX-eR-WHW" secondAttribute="trailing" id="fEX-oU-rjs"/>
+                            <constraint firstItem="BnD-cG-rXM" firstAttribute="height" secondItem="dej-Ta-Z3Q" secondAttribute="height" multiplier="0.13" id="fQA-6s-Lb8"/>
+                            <constraint firstItem="dej-Ta-Z3Q" firstAttribute="bottom" secondItem="3YX-eR-WHW" secondAttribute="bottom" id="pAT-g2-Zfq"/>
+                            <constraint firstItem="3YX-eR-WHW" firstAttribute="leading" secondItem="dej-Ta-Z3Q" secondAttribute="leading" id="xdR-zd-5aE"/>
+                            <constraint firstItem="5KD-Y8-KDX" firstAttribute="top" secondItem="BnD-cG-rXM" secondAttribute="bottom" constant="10" id="zao-Mh-X8e"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="dej-Ta-Z3Q"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="d1A-4R-uCO"/>
+                    <connections>
+                        <outlet property="player1TextField" destination="hjf-4f-ETJ" id="GQP-uz-sce"/>
+                        <outlet property="player1View" destination="Gp6-9c-ebQ" id="uFb-Kl-pKq"/>
+                        <outlet property="player2TextField" destination="Nag-tT-iqy" id="64t-Xb-eFw"/>
+                        <outlet property="player2View" destination="guF-9e-xJ7" id="Vkg-EC-CjS"/>
+                        <outlet property="player3TextField" destination="AF2-LK-n9D" id="1Qa-GR-FiI"/>
+                        <outlet property="player3View" destination="aBI-Z3-9B4" id="528-Lk-2AH"/>
+                        <outlet property="player4TextField" destination="dL3-7E-5Ig" id="uSs-yS-nMB"/>
+                        <outlet property="player4View" destination="B6U-k9-Jv2" id="hQG-7Q-DSu"/>
+                        <outlet property="player5TextField" destination="EMU-N0-LGu" id="oih-Ef-VSf"/>
+                        <outlet property="player5View" destination="WgX-Js-ev4" id="J4Z-aw-IjR"/>
+                        <outlet property="player6TextField" destination="qpA-NX-Pl6" id="9Fq-Qy-p1Y"/>
+                        <outlet property="player6View" destination="T4Z-yd-Bgx" id="QRE-dP-3gr"/>
+                        <outlet property="player7TextField" destination="jdX-3q-Iy4" id="xth-bG-X8B"/>
+                        <outlet property="player7View" destination="5oT-j5-M3e" id="Pei-7t-612"/>
+                        <outlet property="player8TextField" destination="3ok-rQ-j0c" id="zK8-V9-Wyh"/>
+                        <outlet property="player8View" destination="EtG-TR-3CV" id="yzm-h3-z3q"/>
+                        <outlet property="removePlayer1Button" destination="O8R-Q1-b0j" id="lmd-4k-qzM"/>
+                        <outlet property="removePlayer1View" destination="yjy-SH-kFv" id="aVD-gD-GWL"/>
+                        <outlet property="removePlayer2Button" destination="baw-uW-ZbS" id="3eT-u1-EyC"/>
+                        <outlet property="removePlayer2View" destination="o3I-gt-dRz" id="O6K-QD-525"/>
+                        <outlet property="removePlayer3Button" destination="UNT-R1-BU3" id="DDA-Fm-nD4"/>
+                        <outlet property="removePlayer3View" destination="Enz-K8-o7o" id="I1p-9z-kpV"/>
+                        <outlet property="removePlayer4Button" destination="UNT-R1-BU3" id="OEI-3S-JTf"/>
+                        <outlet property="removePlayer4View" destination="EyN-ql-6GA" id="z5S-dx-hCD"/>
+                        <outlet property="removePlayer5Button" destination="y7s-Vl-jEG" id="viV-T6-QKh"/>
+                        <outlet property="removePlayer5View" destination="1Ii-Dw-vUK" id="8MZ-SB-BaA"/>
+                        <outlet property="removePlayer6Button" destination="sJ4-O7-W4k" id="rpn-bd-ura"/>
+                        <outlet property="removePlayer6View" destination="70R-IJ-UgA" id="jev-uQ-8Ea"/>
+                        <outlet property="removePlayer7Button" destination="eKa-El-1ec" id="rqU-op-xvy"/>
+                        <outlet property="removePlayer7View" destination="jVv-4u-r0R" id="B9t-jp-f3x"/>
+                        <outlet property="removePlayer8View" destination="CFA-NW-BLg" id="9ka-RJ-laT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Uey-Cn-kh1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1839.1304347826087" y="77.678571428571431"/>
+        </scene>
+        <!--Pass Device-->
+        <scene sceneID="ryU-vt-WD1">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="Pass Device" storyboardName="PassDevice" referencedIdentifier="Pass Device" id="Gv2-LU-uUH" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="wMP-p3-xJw"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tzL-o2-bRM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="602" y="474"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Npg-IX-lpk">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4Af-HX-MKQ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="dWP-5G-lxf">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.0" green="0.23956426980000001" blue="0.2486917377" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="EIY-x6-uu1" kind="relationship" relationship="rootViewController" id="Mwp-0b-m81"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yCg-WS-cu2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="928.98550724637687" y="77.678571428571431"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="chooseCoordenate" width="331" height="72"/>
+        <image name="minusbutton" width="30" height="30"/>
+    </resources>
+</document>

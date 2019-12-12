@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="TsC-iS-CMv">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Game Setup View Controller-->
+        <scene sceneID="1TA-id-rc8">
+            <objects>
+                <viewController storyboardIdentifier="Game Setup" useStoryboardIdentifierAsRestorationIdentifier="YES" id="TsC-iS-CMv" customClass="GameSetupViewController" customModule="Jogos_" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ybp-Do-Q6G">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Game Setup" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xG4-p8-ugy">
+                                <rect key="frame" x="20" y="144" width="374" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IVe-kt-14T">
+                                <rect key="frame" x="159" y="408" width="97" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.74612247239999996" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Main Menu"/>
+                                <connections>
+                                    <action selector="mainMenu:" destination="TsC-iS-CMv" eventType="touchUpInside" id="2Pj-sC-j8w"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X4f-BH-JXY">
+                                <rect key="frame" x="158" y="452" width="99" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.74612247239999996" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Start Game"/>
+                                <connections>
+                                    <action selector="startGame:" destination="TsC-iS-CMv" eventType="touchUpInside" id="Xf9-pA-dnW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="xG4-p8-ugy" firstAttribute="leading" secondItem="7hL-MA-u9H" secondAttribute="leading" constant="20" id="FcS-3X-CBf"/>
+                            <constraint firstItem="7hL-MA-u9H" firstAttribute="trailing" secondItem="xG4-p8-ugy" secondAttribute="trailing" constant="20" id="Q6o-XZ-qaT"/>
+                            <constraint firstItem="xG4-p8-ugy" firstAttribute="top" secondItem="7hL-MA-u9H" secondAttribute="top" constant="100" id="i5I-Q9-p2j"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="7hL-MA-u9H"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="unJ-XU-PNd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-285" y="-120"/>
+        </scene>
+        <!--Main Menu-->
+        <scene sceneID="anE-I3-Crn">
+            <objects>
+                <viewControllerPlaceholder storyboardName="MainMenu" referencedIdentifier="Main Menu" id="Tgd-Eh-kGg" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rSf-LS-Hba" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-286" y="212"/>
+        </scene>
+        <!--Input Player Name-->
+        <scene sceneID="nO4-kf-on1">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="Input Player Name" storyboardName="InputPlayersNames" referencedIdentifier="Input Player Name" id="1Tu-iC-Se7" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cBb-a1-yeX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-286" y="243"/>
+        </scene>
+    </scenes>
+</document>
