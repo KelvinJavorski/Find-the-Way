@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="nU9-kL-HlS">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main Menu View Controller-->
+        <scene sceneID="kRv-gw-uwb">
+            <objects>
+                <viewController storyboardIdentifier="Main Menu" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ONV-BH-Q1S" customClass="MainMenuViewController" customModule="Jogos_" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pHF-Ln-NCA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Main Menu" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QcU-Ha-dpr">
+                                <rect key="frame" x="20" y="144" width="374" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EJa-3M-cVF">
+                                <rect key="frame" x="159" y="337" width="99" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.74612247242647056" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Start Game"/>
+                                <connections>
+                                    <action selector="startGame:" destination="ONV-BH-Q1S" eventType="touchUpInside" id="nUu-bC-czH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pu9-I4-Ew1">
+                                <rect key="frame" x="174" y="381" width="69" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.74612247239999996" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Options"/>
+                                <connections>
+                                    <action selector="options:" destination="ONV-BH-Q1S" eventType="touchUpInside" id="uRZ-fw-bkw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BWP-oq-xUM">
+                                <rect key="frame" x="177" y="425" width="63" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.74612247239999996" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Credits"/>
+                                <connections>
+                                    <action selector="credits:" destination="ONV-BH-Q1S" eventType="touchUpInside" id="W2x-b9-80H"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="QcU-Ha-dpr" firstAttribute="leading" secondItem="VCd-dc-5ud" secondAttribute="leading" constant="20" id="bnA-ze-Md9"/>
+                            <constraint firstItem="QcU-Ha-dpr" firstAttribute="top" secondItem="VCd-dc-5ud" secondAttribute="top" constant="100" id="rg4-wu-5db"/>
+                            <constraint firstItem="VCd-dc-5ud" firstAttribute="trailing" secondItem="QcU-Ha-dpr" secondAttribute="trailing" constant="20" id="vWO-0j-yQS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="VCd-dc-5ud"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="trE-9c-ljt"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RSm-gH-Im6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1028.985507246377" y="109.82142857142857"/>
+        </scene>
+        <!--Game Setup-->
+        <scene sceneID="XII-sQ-2Ko">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="Game Setup" storyboardName="GameSetup" referencedIdentifier="Game Setup" id="O53-tW-qQA" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="pzn-6M-FqP"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0e0-Wj-X2r" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1676.8115942028987" y="77.678571428571431"/>
+        </scene>
+        <!--Options-->
+        <scene sceneID="gsV-YX-KF5">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="Options" storyboardName="Options" referencedIdentifier="Options" id="Irk-X3-Tpb" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Ay2-SB-R5L"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J2H-Ii-VaA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1657.9710144927537" y="109.82142857142857"/>
+        </scene>
+        <!--Credits-->
+        <scene sceneID="SZe-JM-nRX">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="Credits" storyboardName="Credits" referencedIdentifier="Credits" id="3Gf-KI-Oeq" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="3i6-rh-o21"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hx6-WR-6zU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1655.7971014492755" y="142.63392857142856"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="0ot-VW-HSA">
+            <objects>
+                <navigationController storyboardIdentifier="MainMenu" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" navigationBarHidden="YES" id="nU9-kL-HlS" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="wcA-pv-DL3">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ONV-BH-Q1S" kind="relationship" relationship="rootViewController" id="Pgw-Kk-X2T"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L75-eJ-kRM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="118.84057971014494" y="109.82142857142857"/>
+        </scene>
+    </scenes>
+</document>

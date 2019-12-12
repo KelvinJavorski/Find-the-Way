@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mTP-1K-mNP">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Pass Device View Controller-->
+        <scene sceneID="ZME-nu-9oJ">
+            <objects>
+                <viewController storyboardIdentifier="Pass Device" useStoryboardIdentifierAsRestorationIdentifier="YES" id="mTP-1K-mNP" customClass="PassDeviceViewController" customModule="Jogos_" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AO2-T1-JM8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="70r-xP-dnT" customClass="RoundedCornerView" customModule="Jogos_" customModuleProvider="target">
+                                <rect key="frame" x="52" y="136" width="310.5" height="511.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Rectangle" translatesAutoresizingMaskIntoConstraints="NO" id="kiO-5m-eIM">
+                                        <rect key="frame" x="-23" y="97" width="356" height="312"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4RP-TM-pcR">
+                                        <rect key="frame" x="12.5" y="213.5" width="285" height="84"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <string key="text">Pass the device to
+Player Name</string>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="35"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5XH-21-Mp3">
+                                        <rect key="frame" x="70" y="316" width="171" height="61"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <string key="text">Don't show the screen
+to other players
+during your turn.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hDS-0g-X8L" userLabel="Bottom">
+                                <rect key="frame" x="0.0" y="657.5" width="414" height="204.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xv2-TV-ulA">
+                                        <rect key="frame" x="42" y="66" width="331" height="72"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" backgroundImage="chooseCoordenate"/>
+                                        <connections>
+                                            <action selector="nextScreen:" destination="mTP-1K-mNP" eventType="touchUpInside" id="Qin-2n-dx9"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="I'm  Player Name" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Sm-sl-utN">
+                                        <rect key="frame" x="52" y="78" width="310" height="48"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0U3-YD-QsI">
+                                <rect key="frame" x="111" y="248" width="192" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Let's find out your
+role and your
+information.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="hDS-0g-X8L" firstAttribute="bottom" secondItem="6ag-xe-fgB" secondAttribute="bottom" id="9AX-d0-qSf"/>
+                            <constraint firstItem="6ag-xe-fgB" firstAttribute="trailing" secondItem="hDS-0g-X8L" secondAttribute="trailing" id="Cr9-R2-Dqe"/>
+                            <constraint firstItem="hDS-0g-X8L" firstAttribute="height" secondItem="6ag-xe-fgB" secondAttribute="height" multiplier="0.25" id="IId-H4-t44"/>
+                            <constraint firstItem="hDS-0g-X8L" firstAttribute="leading" secondItem="6ag-xe-fgB" secondAttribute="leading" id="xXb-xE-Eye"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6ag-xe-fgB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="U06-US-uns"/>
+                    <connections>
+                        <outlet property="bottomLabel" destination="3Sm-sl-utN" id="19M-1P-cca"/>
+                        <outlet property="holdButton" destination="xv2-TV-ulA" id="DKp-Sb-qEL"/>
+                        <outlet property="label" destination="4RP-TM-pcR" id="lZq-lX-eFP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0W9-Gh-YT3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2843.4782608695655" y="137.94642857142856"/>
+        </scene>
+        <!--Current Place-->
+        <scene sceneID="h1z-38-dXV">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="Current Place" storyboardName="CurrentPlace" referencedIdentifier="Current Place" id="W7Z-VR-v5v" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Wbu-EI-r4c"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XiW-KI-Oqw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2595" y="492"/>
+        </scene>
+        <!--PlayerStartInfo-->
+        <scene sceneID="XEA-dJ-uqF">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="PlayerStartInfo" storyboardName="PlayerStartInfo" referencedIdentifier="PlayerStartInfo" id="RKo-PR-Qr6" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="00U-cz-9C1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3055" y="542"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Rectangle" width="302" height="302"/>
+        <image name="chooseCoordenate" width="331" height="72"/>
+    </resources>
+</document>
